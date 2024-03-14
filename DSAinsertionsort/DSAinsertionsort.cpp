@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 int n;
-int arr[20];
+int arr[40];
 
 void input() {
     while (true) {
         cout << "masukan banyaknya elemen pada array =";
         cin >> n;
-        if (n <= 20)
+        if (n <= 40)
             break;
         else {
             cout << "\nArray dapat mempunyai maksimal 20 elemen.\n";
@@ -27,8 +27,7 @@ void input() {
 }
 
 void insertionSort() {
-    int i, j, n, temp;
-    int arr[40];
+    int i, j, temp;
 
     for (i = 1; i <= n - 1; i++) { //step 1
         temp = arr[i]; //step 2
