@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+int n;
 int arr[20];
 
 void input() {
@@ -56,6 +57,11 @@ void display() {
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    input(); //memanggil prosedur untuk menginput data
+    insertionSort(); //memanggil prosedur bubbblesort untuk proses mengurutkan data
+    display(); //memanggil prosedur untuk menampilkan data yang telah urut
+    system("pause");
+
+    return 0;
 }
 
